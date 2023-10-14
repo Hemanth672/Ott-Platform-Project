@@ -1,0 +1,77 @@
+img{
+z-index: -1;
+width: 1600px;
+height: 700px;
+}
+#fnameid{
+    width: 200px;
+    outline: 0;
+}
+#lnameid{
+    width: 200px;
+    outline: 0;
+}
+#fname{
+    background-color:white;
+    width:fit-content;
+    padding: 5px;
+    
+}
+#lname{
+    background-color:white;
+    width:fit-content;
+    padding: 5px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+#inpid{
+    width: 200px;
+    outline: 0;
+}
+#passid{
+    width:200px;
+    outline: 0;
+}
+#unbox{
+    background-color:white;
+    width:fit-content;
+    padding: 5px;
+}
+input[type="button" i]{
+    border-radius: 16%;
+    border-inline:unset;
+    
+
+}
+#divbutt{
+    margin-top: 20%;
+    margin-left: 13%;
+    
+}
+
+
+#passbox{
+   
+    margin-top: 8%;
+    padding: 5px;
+    background-color: white;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#divv{
+    background-color: rgba(0, 0, 0, 0.719);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 6%;
+    
+}

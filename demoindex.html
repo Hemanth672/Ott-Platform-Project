@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <img src="bg_index.jpg" alt="">
+    <link id="homelink" href="home.html">
+    <script>
+
+
+
+        let logbox=document.createElement("div")
+        document.body.appendChild(logbox)
+        logbox.setAttribute("id","divv")
+        logbox.setAttribute("style","width:400px;height:400px")
+
+        let f= document.createElement("form");
+        f.setAttribute("name","form")
+        f.setAttribute("action","")
+        f.setAttribute("id","login")
+       logbox.appendChild(f);
+        let heading= document.createElement("h1")
+heading.innerHTML="Sign In"
+f.appendChild(heading);
+heading.setAttribute("style","color:white;margin-bottom:8%")
+
+
+
+let userbox=document.createElement("div")
+userbox.setAttribute("id","unbox")
+let inp=document.createElement("input")
+inp.setAttribute("type","number")
+inp.setAttribute("placeholder","Mobile Number")
+f.appendChild(userbox)
+userbox.appendChild(inp)
+
+inp.setAttribute("style","border-width:0")
+inp.setAttribute("id","inpid")
+inp.setAttribute("name","un")
+
+
+let pwbox=document.createElement("div")
+pwbox.setAttribute("id","passbox")
+let inp2=document.createElement("input")
+inp2.setAttribute("type","password")
+inp2.setAttribute("placeholder","Password")
+inp2.setAttribute("style","border-width:0")
+inp2.setAttribute("id","passid")
+inp2.setAttribute("name","pass")
+
+
+
+f.appendChild(pwbox)
+pwbox.appendChild(inp2) 
+let divbut=document.createElement("div")
+divbut.setAttribute("id","divbutt")
+f.appendChild(divbut)
+let butt=document.createElement("button")
+butt.setAttribute("type","button")
+butt.innerHTML="Sign In"
+// butt.setAttribute("action","home.html")
+butt.setAttribute("style","background-color:red;color:White;width:150px;height:50px")
+butt.setAttribute("id","idbutt")
+butt.setAttribute("onclick","validate()")
+divbut.appendChild(butt)
+
+
+
+// butt.setAttribute("onclick",checkfun())
+
+let signupdiv=document.createElement("div")
+f.appendChild(signupdiv)
+let a=document.createElement("a")
+a.setAttribute("href","signup.html")
+a.innerHTML="<h4>Sign Up !"
+a.setAttribute("style","text-decoration:none")    
+// let signup= document.createElement("h4")
+signupdiv.setAttribute("style","margin-top:15%;margin-left:30%")
+// signupdiv.appendChild(signup)
+signupdiv.appendChild(a);
+// signup.setAttribute("style","color:khaki"
+
+function validate(){
+        
+        let username =document.form.un.value;
+        let password=document.form.pass.value;
+    if(username!=9361753996){
+        alert("Invalid Mobile Number")
+        return false;
+        }
+    else if(password!=3337){
+        alert("Invalid Password")
+        return false;
+    }
+    else if(username==""){
+        alert("Mobile Number cannot be Empty")
+        return false;
+    }
+    else if(password==""){
+        alert("Please Enter a Password")
+        return false;
+    }
+    else{
+        // console.log("hi");
+        // alert("Login Successful");
+        window.location.href="home.html";
+        return false;
+        
+        
+    }
+
+    }
+
+
+
+
+
+
+
+
+
+// function loginpage(){
+//     let un=document.getElementById("inpid").value
+//     let pw=document.getElementById("passid").value
+    
+    
+    
+// if(un=="123456"&& pw=="3337"){
+//     let cc=document.getElementById("idbutt")
+    
+// cc.onclick(location.href="home.html")
+
+//  }   
+// else{
+//     alert("Invalid Characters")
+// }    }
+
+// function checkfun(){
+//             let user= document.getElementById("inpid").value
+//             // let m2 = /choco/
+//             let uncheck= "\d" ;
+
+//             document.write(user.match(uncheck))
+//             // console.log(a3.match(m4))
+//             if(uncheck.test(user)){
+                
+
+//             }
+//             else {
+//                 alert("Invalid characters")
+//             }
+
+
+//         }
+
+
+
+    </script>
+    
+</body>
+</html>

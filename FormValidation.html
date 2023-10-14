@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form" action="home.html">
+        <input name="un" type="text">
+        <input name="pass" type="password">
+        <input type="submit" onclick="validate()" value="Sign In">
+    </form>
+    <script>
+      
+        // let form=document.createElement("form") 
+        // document.body.appendChild(form)
+        // form.setAttribute("id","form1")
+        // let inp1=document.createElement("input")
+        // inp1.setAttribute("id","un")
+        // inp1.setAttribute("type","text")
+        // form.appendChild(inp1)
+        // let inp2=document.createElement("input")
+        // inp1.setAttribute("id","pw")
+        // inp1.setAttribute("type","password")
+        // form.appendChild(inp2)
+        // let sub =document.createElement("button")
+        // sub.setAttribute("id","butt")
+        // sub.setAttribute("text","Click")
+        // sub.setAttribute("onClick",validate)
+        // form.appendChild(sub)
+
+    function validate(){
+        
+        let username =document.form.un.value;
+        let password=document.form.pass.value;
+    if(username==""){
+        alert("Username cannot be empty")
+        }
+    else if(password.length<4){
+        alert("Password must be atleast 4 characters")
+    }
+    else{
+        alert("okay")
+    }
+
+    }
+    </script>
+</body>
+</html>

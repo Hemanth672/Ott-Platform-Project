@@ -1,0 +1,35 @@
+
+        
+        body{
+            background-color: black;
+        }
+        .list {
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .divv {
+            max-width: 300px;
+            margin: 15px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+      
